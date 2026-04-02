@@ -7,7 +7,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_KEY = "329cf94fb713588aadb6976a57e9a375";
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const handleSearch = async (searchedCity) => {
     if (!searchedCity) return;
